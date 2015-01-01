@@ -63,8 +63,7 @@ def find_phone_where():
         found_phone()
 
     else:
-        fun.print_smooth("\n\nI'm not sure where that is. Where should I look?")
-        print_smooth(', or '.join(car_areas))
+        fun.print_smooth("\n\nI'm not sure where that is.")
         find_phone_where()
 
 

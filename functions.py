@@ -6,7 +6,6 @@ import time
 import pygame
 from pygame.mixer import Sound
 from pygame.mixer import stop as pystop
-from termcolor import colored
 
 
 def clear_screen():
@@ -25,7 +24,7 @@ def print_smooth(string):
             time.sleep(.5)
         else:
             time.sleep(.035)
-    print colored("", "red")
+    print ("")
 
 
 def print_slow(string):
@@ -79,3 +78,10 @@ def music(whataudio):
     pygame.init()
     pygame.mixer.music.load(whataudio)
     pygame.mixer.music.play()
+
+
+def soundtest():
+    pygame.mixer.init()
+    pygame.mixer.pre_init(44100, -16, 2, 2048)
+    pygame.init()
+    Sound(os.path.join('soundeffects', 'cellvibrate.wav'))

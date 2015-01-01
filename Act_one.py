@@ -10,7 +10,7 @@ car_crash = (os.path.join('soundeffects', 'carcrash.wav'))
 def act_one():
     fun.clear_screen()
     fun.sound_effect(car_crash)
-    time.sleep(8)
+    time.sleep(7)
     print ("Your head throbs. The smell of radiator fluid and melting plastic is overpowering, making you feel naus"
           "eous. More than nauseous. You know you will pass out from the fumes if you dont get out of the car quickly."
           "\n\nBlood flows to the top of your head and your sense of gravity begins to come back.\n\nYou are upside down"

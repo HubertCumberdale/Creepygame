@@ -12,7 +12,7 @@ def start_game():
     fun.print_smooth("Would you like to view the tutorial?")
     time.sleep(1)
     tutorial_y_n = raw_input("Y or N?--> ")
-    if tutorial_y_n.lower() in ["y", "yes"]:
+    if tutorial_y_n.lower() in ["y", "yes", "ye"]:
         fun.clear_screen()
         fun.print_smooth("This is a text based game that contains inventory items as well as path choices.\n\n"
                          "You, the player, will be able to select different inventory items and path choices through "
